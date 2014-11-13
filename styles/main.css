@@ -1,0 +1,56 @@
+a {
+	cursor: pointer;
+}
+
+.container {
+	max-width: 960px;
+	padding: 0 2.5em;
+}
+
+.row, .row-alt {
+	width:100%;
+	margin: 0;
+}
+
+.row-alt {
+	background:#FF6838;
+	color: white;
+}
+
+.icon {
+	width: 100%;
+	margin-top:15%;
+	max-width: 16em;
+	max-height: 16em;
+}
+
+.pad-bottom {
+	padding-bottom: 2em;
+}
+.pad-top {
+	padding-top: 1em;
+}
+
+.row-alt .btn-link {
+	color: white;
+}
+
+#horoscope-text {
+	font-size: 1.25em;
+	line-height: 1.5;
+}
+
+#profile-pic {
+	max-width: 7em;
+}
+
+#logo {
+	max-width: 1.5em;
+	display: inline-block;
+	margin-right: 0.5em;
+}
+
+.limit {
+	width: 75%;
+	margin: 0 auto;
+}

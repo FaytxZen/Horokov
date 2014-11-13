@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Horokov - Your Premiere Markov Horoscope Generator</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<!--vendor scripts-->
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="libs/material/js/material.min.js"></script>
+		<script type="text/javascript" src="libs/material/js/ripples.min.js"></script>
+
+		<!--homebrew scripts-->
+		<script type="text/javascript" src="scripts/parser.js"></script>
+		<script type="text/javascript" src="scripts/generator.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+
+		<!--stylesheets-->
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/material/css/material-wfont.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/material/css/material.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/material/css/ripples.min.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<p class="pad-top pad-bottom"></p>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand" href="#"><img id="logo" src="img/favicon.png" alt=""/>Horokov</a>
+			</div><!--navbar-header-->
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav navbar-right">
+
+				</ul>
+			</div>
+		</div><!--navbar-->
+		<div class="row pad-bottom">
+			<div class="container">
+				<section class="col-md-5">
+					<div class="pad-top">
+						<img id="horoscope-image" class="img-responsive icon" src="img/Aries.png" alt="horoscope image"/>
+					</div>
+					
+				</section>
+				<section id="horoscope" class="col-md-5">
+					<h1>Aries</h1>
+					<div class="btn-group">
+						<a href="" data-toggle="dropdown" class="btn btn-primary dropdown-toggle withripple" aria-expanded="false">Signs
+							<span class="caret"></span>
+							<div class="ripple-wrapper"></div>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a onclick="SetHoroscope($(this).text())">Aries</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Taurus</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Gemini</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Cancer</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Leo</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Virgo</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Libra</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Scorpio</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Sagittarius</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Capricorn</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Aquarius</a></li>
+							<li><a onclick="SetHoroscope($(this).text())">Pisces</a></li>
+						</ul><!--dropdown-menu-->
+					</div><!--bnt-group-->
+					<p id="horoscope-text"></p>
+				</section>
+			</div>
+		</div>
+		<div class="row row-alt">
+			<div class="text-center container pad-bottom">
+				<h2>Behind the Maker</h2>
+				<div class="row">
+					<div class="limit">
+						<p id="bio"></p>
+					</div>
+					<a href="http://andrewvora.com" target="_blank" class="btn btn-link">My Website</a>
+					<a href="http://github.com/faytxzen" target="_blank" class="btn btn-link">GitHub</a>
+				</div>
+			</div>
+		</div>
+		<footer class="container pad-top row">
+			<p class="pull-right text-muted"><i class="mdi-image-tag-faces"></i><a target="_blank" href="http://ufsdc.github.io/prettybadapps">Bad-Appathon</a>, circa 2014</p>
+		</footer>
+	</body>
+</html>
