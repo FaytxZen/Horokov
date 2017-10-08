@@ -1,4 +1,4 @@
-#Horokov - Markov Chains + Horoscopes
+# Horokov - Markov Chains + Horoscopes
 
 My little entry for the UF Bad-Appathon 2014 (hosted by UF SEC)  :V
 
